@@ -59,6 +59,7 @@ h2{
     justify-items: center;
     transition: .5s ease-in-out;
 }
+
 a:hover{
     background-color: white;
     color: #141d37;
@@ -225,8 +226,30 @@ a:hover{
     transition: 0.5s ease-in-out;
 }
 
+@media screen and (max-width: 508px) {
+    #container {
+        height: 1250px;
+    }
+
+    .card-text {
+        margin-left: 40px;
+        margin-bottom: 80px;
+        width: 100px;
+    }
+
+    .card-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .projetos {
+        margin-left: 48px;
+        text-align: center;
+    }
+}
+
 .card-text{
-    width: 40%;
+    width: 60%;
     letter-spacing: 1px;
     color: rgb(83, 97, 128);
 }
@@ -326,4 +349,13 @@ section p{
 }
 
 
+@media screen and (max-width: 508px) {
+    #sobre h2 {
+        font-size: 28px;
+    }
 
+    #text {
+        width: 400px;
+        margin-bottom: 40px;
+    }
+}
