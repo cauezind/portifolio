@@ -1,36 +1,37 @@
-var home = document.querySelector('#home-name');
-var projetos = document.querySelector('#projetos-name');
-var sobre = document.querySelector('#sobre-name');
-var menu = document.querySelector('.menu')
-var itens = document.querySelector('.menu-itens')
-var checkbox = document.querySelector('#toggle')
+const btn = document.getElementById('menu-btn')
+const ancora1 = document.querySelector('#anchor1')
+const ancora2 = document.querySelector('#anchor2')
+const ancora3 = document.querySelector('#anchor3')
+
+function toggleMenu(){
+
+    if(event.type === 'touchstart') event.preventDefault()
+
+    const nav = document.querySelector('nav')
+
+    nav.classList.toggle('active')
+}
+
+btn.addEventListener('click', toggleMenu)
+ancora1.addEventListener('click', toggleMenu)
+ancora2.addEventListener('click', toggleMenu)
+ancora3.addEventListener('click', toggleMenu)
+btn.addEventListener('touchstart', toggleMenu)
+ancora1.addEventListener('touchstart', toggleMenu)
+ancora2.addEventListener('touchstart', toggleMenu)
+ancora3.addEventListener('touchstart', toggleMenu)
 
 
 
-function start (){
-    home.addEventListener('click', disapear);
-    projetos.addEventListener('click', disapear);
-    sobre.addEventListener('click', disapear);
 
-    load();
+let btnColor = document.querySelector('.img') 
+
+btnColor.addEventListener('click', function changeColor() {
+
     
-}
-
-function disapear (){
-
-    menu.style.visibility="hidden";
-    itens.style.visibility="hidden";
-}
-
-function load(){
-
-    checkbox.addEventListener('click', apear)
-
-}
-
-function apear(){
-    menu.style.visibility="visible";
-    itens.style.visibility="visible";
-}
-start();
+    const body = document.querySelector('body')
+    body.classList.toggle('dark')
+    
+})
+ 
 
