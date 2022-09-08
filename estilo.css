@@ -21,7 +21,7 @@ body{
 
 .logo{
     margin: 0;
-    margin-left: 50px;
+    
 }
 
 #principal{
@@ -90,16 +90,23 @@ ul{
 }
 
 #eu{
-    width: 30rem;
-    height: 30rem;
+    width: 35rem;
+    height: 35rem;
     background-image: url('./imagem/fundo2.png');
     background-repeat: no-repeat;
     background-size: contain;
     z-index: -3;
     
+    
 }
 
 @media screen and (max-width: 508px) {
+
+    #header-container{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
 
     h1{
         font-size: 28px;
@@ -293,6 +300,9 @@ nav.active span::before{
 
 
 /*card*/
+main{
+    width: 100%;
+}
 #container {
     height: fit-content;
     width: 100%;
@@ -330,6 +340,7 @@ nav.active span::before{
         width: 100%;
         height: fit-content;
         justify-content: center;
+        align-items: center;
         
     }
 
@@ -352,7 +363,6 @@ nav.active span::before{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 40px;
     }
 
     .projetos {
@@ -501,7 +511,7 @@ section p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 2rem;
+    
 }
 
 /* SCROLL */
